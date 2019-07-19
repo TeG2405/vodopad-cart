@@ -1,6 +1,9 @@
 .nav-dynamic {
   font-size: 15px;
   background-color: #F3F3F3;
+  &:not(:last-child){
+    margin-bottom: $grid-gutter-width;
+  }
   &__row{
     display: flex;
     align-items: center;
