@@ -1,4 +1,6 @@
 // Теперь переопределенные переменные должны содержать ключевое слово !default;
+$font-family-sans-serif: 'Roboto';
+
 @import "../blocks.01-base/fi/variables";
 @import "~bootstrap/scss/variables";
 // Теперь переопределенные переменные не должны содержать ключевое слово !default;

@@ -1,0 +1,95 @@
+.nav-dynamic {
+  font-size: 15px;
+  background-color: #F3F3F3;
+  &__row{
+    display: flex;
+    align-items: center;
+    margin-left: $grid-gutter-width/-2;
+    margin-right: $grid-gutter-width/-2;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  &__li{
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    color: #767676;
+    white-space: nowrap;
+    font-weight: 500;
+    line-height: 1.1;
+    padding-top: $grid-gutter-width/2;
+    padding-bottom: $grid-gutter-width/2;
+    border-bottom: 2px solid transparent;
+    &.active,
+    &:hover{
+      border-bottom-color: #B7C63A;
+      color: #2C2B2B;
+    }
+  }
+  &__link{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  &__title{
+    position: relative;
+    overflow: hidden;
+    max-width: 150px;
+    &:before{
+      content: '';
+      pointer-events: none;
+      position: absolute;
+      height: 100%;
+      width: $grid-gutter-width;
+      left: 150px - $grid-gutter-width;
+      background: linear-gradient(to left, rgba(243,243,243,1) 0%, rgba(243,243,243,0) 50%);
+    }
+  }
+  &__badge{
+    display: block;
+    font-weight: 400;
+    height: 1.375em;
+    min-width: 1.375em;
+    line-height: 1.375em;
+    white-space: nowrap;
+    color: $white;
+    background-color: #A0A0A0;
+    border-radius: 3px;
+    text-align: center;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    &:not(:first-child){
+      margin-left: 0.4em;
+    }
+  }
+  &__tool{
+    cursor: pointer;
+    display: none;
+    font-weight: 400;
+    height: 1.375em;
+    line-height: 1.375em;
+    white-space: nowrap;
+    border-radius: 3px;
+    text-align: center;
+    color: #767676;
+    &:not(:first-child){
+      margin-left: 0.4em;
+    }
+    .nav-dynamic__item:hover &{
+      display: block
+    }
+  }
+  &__control{
+    flex: 0 0 160px + $grid-gutter-width;
+    white-space: nowrap;
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
+    width: 160px + $grid-gutter-width;
+  }
+}
