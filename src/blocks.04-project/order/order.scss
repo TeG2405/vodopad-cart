@@ -3,7 +3,10 @@
   padding-top: $grid-gutter-width;
   padding-bottom: $grid-gutter-width;
   &__container{
-    @include make-container-max-widths();
+    @include make-container();
+    @include media-breakpoint-up(lg){
+      @include make-container-max-widths();
+    }
   }
   &__inner{
     padding-top: $grid-gutter-width/2;
@@ -66,5 +69,9 @@
         }
       }
     }
+  }
+  &__offset{
+    max-width: 380px;
+    margin: auto;
   }
 }

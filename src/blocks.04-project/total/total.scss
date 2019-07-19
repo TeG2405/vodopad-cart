@@ -1,0 +1,50 @@
+.total {
+  font-size: 15px;
+  &__row{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    margin-bottom: $grid-gutter-width/3;
+    &:after{
+      content: '';
+      flex: 1 1 0;
+      height: $line-height-base - 1.1em;
+      display: block;
+      border-top: 1px dashed #C5C5C5;
+    }
+  }
+  &__label{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  &__value{
+    display: flex;
+    align-items: baseline;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    order: 1;
+  }
+  &__tool{
+    color: #767676;
+    margin-right: 0.4em;
+    cursor: pointer;
+    @include hover(){
+      color: $danger;
+    }
+  }
+  &__old{
+    color: #A0A0A0;
+    line-height: 1;
+    text-decoration: line-through;
+  }
+  &__large{
+    font-size: 28px;
+    line-height: 1;
+    color: $primary;
+    font-weight: 500;
+  }
+}
