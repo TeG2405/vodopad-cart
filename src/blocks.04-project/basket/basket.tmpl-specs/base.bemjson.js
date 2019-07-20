@@ -3,9 +3,9 @@ module.exports = [
       {elem: 'table', content: [
           {elem: 'tools', content: [
               {elem: 'item', content: [
-                  {elem: 'row', content: [
+                  {elem: 'row', cls: 'align-items-center', content: [
                       {elem: 'col', mods: {main: true}, content: [
-                          {elem: 'row', content: [
+                          {elem: 'row', cls: 'align-items-center', content: [
                               {elem: 'col', mods: {check: true}, content: [{block: 'custom-control'}]},
                               {elem: 'col', mods: {controls: true}, content: [
                                   {block: 'btn', cls: 'btn-primary btn-sm', content: 'Удалить'},
@@ -14,7 +14,7 @@ module.exports = [
                             ]},
                         ]},
                       {elem: 'col', mods: {addition: true}, content: [
-                          {elem: 'row', cls: 'justify-content-end', content: [
+                          {elem: 'row', cls: 'align-items-center justify-content-end', content: [
                               {elem: 'col', mods: {controls: true}, content: [
                                   {block: 'a', content: 'Ссылка на вашу корзину'},
                                   {elem: 'link', mix: {block: 'fi', mods: {icon: 'print'}}, attrs: {title: 'Печать'}},

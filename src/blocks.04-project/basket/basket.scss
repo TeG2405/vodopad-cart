@@ -30,6 +30,10 @@
     display: flex;
     margin-left: $grid-gutter-width/-2;
     margin-right: $grid-gutter-width/-2;
+    &_tools,
+    &_header{
+      align-items: center;
+    }
     &_item{
       @include media-breakpoint-down(sm){
         flex-wrap: wrap;
