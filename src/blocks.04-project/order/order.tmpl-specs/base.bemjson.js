@@ -8,7 +8,7 @@ module.exports = [
               {elem: 'row', content: [
                   {elem: 'col', content: [
                       {elem: 'offset', content: [
-                          {block: 'h', size: 4, cls: 'mb-4', content: 'Контактные данные'},
+                          {block: 'h', size: 4, cls: 'mt-0 mb-4', content: 'Контактные данные'},
                           {cls: 'form-group row', content: [
                               {cls: 'col-sm-4 col-form-label', content: 'Ваше имя'},
                               {cls: 'col-sm-8', content: [
@@ -43,7 +43,7 @@ module.exports = [
                     ]},
                   {elem: 'col', content: [
                       {elem: 'offset', content: [
-                          {block: 'h', size: 4, cls: 'mb-4', content: 'Способ доставки и оплаты'},
+                          {block: 'h', size: 4, cls: 'mt-0 mb-4', content: 'Способ доставки и оплаты'},
                           {cls: 'form-group', content: [
                               {block: 'nav', cls: 'nav-pills nav-justified', content: [
                                   {block: 'a', cls: 'nav-item nav-link active', attrs: {'data-toggle': 'pill', 'href': '#tab_1'}, content: 'Доставка'},
@@ -90,7 +90,7 @@ module.exports = [
                     ]},
                   {elem: 'col', content: [
                       {elem: 'offset', content: [
-                          {block: 'h', size: 4, cls: 'mb-4', content: 'Итого'},
+                          {block: 'h', size: 4, cls: 'mt-0 mb-4', content: 'Итого'},
                           {cls: 'form-group', content: [
                               require('./../../total/total.tmpl-specs/base.bemjson'),
                             ]},

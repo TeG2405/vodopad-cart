@@ -25,6 +25,20 @@ $container-max-widths: (
   xl: 1230px
 ) !default;
 
+$spacers: (
+  x: 3px,
+  s: 5px,
+  m: 10px,
+  l: 20px,
+  e: 40px,
+) !default;
+
 @import "../blocks.01-base/fi/variables";
 @import "~bootstrap/scss/variables";
+
+$h1-font-size: rem(24px);
+$h2-font-size: rem(24px);
+$h3-font-size: rem(20px);
+$h4-font-size: rem(18px);
+
 // Теперь переопределенные переменные не должны содержать ключевое слово !default;
