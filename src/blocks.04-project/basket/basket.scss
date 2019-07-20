@@ -28,8 +28,8 @@
   }
   &__row{
     display: flex;
-    margin-left: $grid-gutter-width/-3;
-    margin-right: $grid-gutter-width/-3;
+    margin-left: $grid-gutter-width/-2;
+    margin-right: $grid-gutter-width/-2;
     &_item{
       @include media-breakpoint-down(sm){
         flex-wrap: wrap;
@@ -45,8 +45,8 @@
     }
   }
   &__col{
-    padding-left: $grid-gutter-width/3;
-    padding-right: $grid-gutter-width/3;
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
     &_main{
       flex: 1 1 420px;
     }
@@ -104,6 +104,13 @@
       @include media-breakpoint-down(sm){
         width: 100%;
         margin: $grid-gutter-width/3 0;
+        display: flex;
+        align-items: baseline;
+        flex-flow: row-reverse wrap;
+        justify-content: flex-end;
+        .price + .price {
+          margin-right: 0.5em;
+        }
       }
     }
     &_remove{
@@ -113,9 +120,14 @@
         order: 1;
       }
       a{
-        @include plain-hover-focus(){
-          color: #B6B6B6;
+        display: block;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        color: #B6B6B6;
+        @include hover(){
           text-decoration: none;
+          color: $danger;
         }
       }
     }

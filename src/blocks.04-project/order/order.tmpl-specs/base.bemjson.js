@@ -1,7 +1,9 @@
 module.exports = [
   {block: 'order', content: [
       {elem: 'container', content: [
-          {block: 'h', size: 2, content: 'Оформление заказа <b>Приморский Проспект 173</b>'},
+          {elem: 'header', content: [
+              {block: 'h', size: 2, content: 'Оформление заказа <b>Приморский Проспект 173</b>'},
+            ]},
           {elem: 'inner', content: [
               {elem: 'row', content: [
                   {elem: 'col', content: [
