@@ -12,5 +12,9 @@ module.exports = {
         require('./../blocks.04-project/basket/basket.tmpl-specs/base.bemjson'),
       ]},
     require('./../blocks.04-project/order/order.tmpl-specs/base.bemjson'),
+    require('./../blocks.03-bootstrap/modal/modal.tmpl-specs/share.bemjson'),
+    require('./../blocks.03-bootstrap/modal/modal.tmpl-specs/revord.bemjson'),
+    require('./../blocks.03-bootstrap/modal/modal.tmpl-specs/remove.bemjson'),
+    require('./../blocks.03-bootstrap/modal/modal.tmpl-specs/move.bemjson'),
   ],
 };

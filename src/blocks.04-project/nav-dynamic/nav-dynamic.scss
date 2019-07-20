@@ -99,12 +99,15 @@
     white-space: nowrap;
     border-radius: 3px;
     text-align: center;
-    color: #767676;
+    @include plain-hover-focus(){
+      color: #767676;
+      text-decoration: none;
+    }
     &:not(:first-child){
       margin-left: 0.4em;
     }
     .nav-dynamic__item:hover &{
-      display: block
+      display: block;
     }
   }
   &__control{

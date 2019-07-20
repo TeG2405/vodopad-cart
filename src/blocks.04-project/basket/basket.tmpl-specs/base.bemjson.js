@@ -8,15 +8,15 @@ module.exports = [
                           {elem: 'row', cls: 'align-items-center', content: [
                               {elem: 'col', mods: {check: true}, content: [{block: 'custom-control'}]},
                               {elem: 'col', mods: {controls: true}, content: [
-                                  {block: 'btn', cls: 'btn-primary btn-sm', content: 'Удалить'},
-                                  {block: 'btn', cls: 'btn-primary btn-sm ml-3', content: 'Переместить'},
+                                  {block: 'btn', cls: 'btn-primary btn-sm', attrs: {'data-toggle': 'modal', 'href': '#REMOVE'}, content: 'Удалить'},
+                                  {block: 'btn', cls: 'btn-primary btn-sm ml-3', attrs: {'data-toggle': 'modal', 'href': '#MOVE'}, content: 'Переместить'},
                                 ]},
                             ]},
                         ]},
                       {elem: 'col', mods: {addition: true}, content: [
                           {elem: 'row', cls: 'align-items-center justify-content-end', content: [
                               {elem: 'col', mods: {controls: true}, content: [
-                                  {block: 'a', content: 'Ссылка на вашу корзину'},
+                                  {block: 'a', attrs: {'data-toggle': 'modal', 'href': '#SHARE'}, content: 'Ссылка на вашу корзину'},
                                   {elem: 'link', mix: {block: 'fi', mods: {icon: 'print'}}, attrs: {title: 'Печать'}},
                                   {elem: 'link', mix: {block: 'fi', mods: {icon: 'exel'}}, attrs: {title: 'Сохранить в Exel'}},
                                 ]},

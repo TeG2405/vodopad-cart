@@ -16,12 +16,6 @@ module.exports = [
                           ]},
                       ]},
                   ])),
-                  {elem: 'li', content: [
-                      {block: 'btn', cls: 'btn-outline-secondary btn-block', content: [
-                          {block: 'fi', cls: 'mr-3', mods: {icon: 'plus'}},
-                          'Новая корзина',
-                        ]},
-                    ]},
                 ]},
               {elem: 'control', mods: {next: true}, mix: {block: 'fi', mods: {icon: 'chevron-right'}}},
             ]},
