@@ -1,9 +1,13 @@
 .header {
-  padding-top: $grid-gutter-width;
-  padding-bottom: $grid-gutter-width;
   background: $white;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
   margin-bottom: $grid-gutter-width;
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
+  @include media-breakpoint-up(md){
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
   &__inner{
     display: flex;
     flex-wrap: wrap;

@@ -17,7 +17,7 @@ module.exports = [
                       ]},
                   ])),
                   {elem: 'li', content: [
-                      {block: 'btn', cls: 'btn-outline-secondary btn-block', content: [
+                      {block: 'btn', cls: 'btn-outline-secondary btn-sm btn-block', content: [
                           {block: 'fi', cls: 'mr-3', mods: {icon: 'plus'}},
                           'Новая корзина',
                         ]},

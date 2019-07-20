@@ -8,8 +8,8 @@ module.exports = [
                           {elem: 'row', cls: 'align-items-center', content: [
                               {elem: 'col', mods: {check: true}, content: [{block: 'custom-control'}]},
                               {elem: 'col', mods: {controls: true}, content: [
-                                  {block: 'btn', cls: 'btn-primary btn-sm', attrs: {'data-toggle': 'modal', 'href': '#REMOVE'}, content: 'Удалить'},
-                                  {block: 'btn', cls: 'btn-primary btn-sm ml-3', attrs: {'data-toggle': 'modal', 'href': '#MOVE'}, content: 'Переместить'},
+                                  {block: 'btn', cls: 'btn-primary btn-sm py-0', attrs: {'data-toggle': 'modal', 'href': '#REMOVE'}, content: 'Удалить'},
+                                  {block: 'btn', cls: 'btn-primary btn-sm py-0 ml-m', attrs: {'data-toggle': 'modal', 'href': '#MOVE'}, content: 'Переместить'},
                                 ]},
                             ]},
                         ]},

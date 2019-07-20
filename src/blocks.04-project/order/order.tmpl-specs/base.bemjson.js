@@ -53,8 +53,8 @@ module.exports = [
                           {cls: 'tab-content', content: [
                               {cls: 'tab-pane fade show active', attrs: {id: 'tab_1'}, content: [
                                   {cls: 'form-group row', content: [
-                                      {cls: 'col-sm-2 col-form-label', content: 'Адрес'},
-                                      {cls: 'col-sm-10', content: [
+                                      {cls: 'col-sm-3 col-form-label', content: 'Адрес'},
+                                      {cls: 'col-sm-9', content: [
                                           {block: 'form-control'},
                                         ]},
                                     ]},
@@ -64,8 +64,8 @@ module.exports = [
                                 ]},
                               {cls: 'tab-pane fade', attrs: {id: 'tab_2'}, content: [
                                   {cls: 'form-group row', content: [
-                                      {cls: 'col-sm-2 col-form-label', content: 'Магазин'},
-                                      {cls: 'col-sm-10', content: [
+                                      {cls: 'col-sm-3 col-form-label', content: 'Магазин'},
+                                      {cls: 'col-sm-9', content: [
                                           {block: 'custom-select', tag: 'select', content: [
                                             'Адрес магазина 1',
                                             'Адрес магазина 2',
@@ -78,8 +78,8 @@ module.exports = [
                             ]},
                           {tag: 'hr', cls: 'my-4'},
                           {cls: 'form-group row', content: [
-                              {cls: 'col-sm-2 col-form-label', content: 'Оплата'},
-                              {cls: 'col-sm-10', content: [
+                              {cls: 'col-sm-3', content: 'Оплата'},
+                              {cls: 'col-sm-9', content: [
                                   {block: 'custom-control', props: {type: 'radio', name: 'PAY'}, content: 'Наличными'},
                                   {block: 'custom-control', props: {type: 'radio', name: 'PAY', checked: true}, content: 'Картой на сайте'},
                                   {block: 'custom-control', props: {type: 'radio', name: 'PAY'}, content: 'Картой при получении'},

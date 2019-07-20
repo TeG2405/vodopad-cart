@@ -10,7 +10,7 @@ module.exports = [
                     ]},
                 ]},
               {elem: 'phone', content: [
-                  {cls: 'mb-2', content: [
+                  {cls: 'mb-x', content: [
                       'Интернет-магазин',
                       {block: 'a', content: '8 812 600-50-20'},
                     ]},

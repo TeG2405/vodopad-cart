@@ -11,7 +11,7 @@ module.exports = [
                 ]},
               {tag: 'p', content: [
                   'Или создайте новую корзину',
-                  {block: 'btn', cls: 'btn-outline-secondary px-l ml-m', content: [
+                  {block: 'btn', cls: 'btn-outline-secondary btn-sm px-l ml-m d-inline-flex align-items-center', content: [
                       {block: 'fi', cls: 'mr-3', mods: {icon: 'plus'}},
                       'Новая корзина',
                     ]},
