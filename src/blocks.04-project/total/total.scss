@@ -36,15 +36,4 @@
       color: $danger;
     }
   }
-  &__old{
-    color: #A0A0A0;
-    line-height: 1;
-    text-decoration: line-through;
-  }
-  &__large{
-    font-size: 28px;
-    line-height: 1;
-    color: $primary;
-    font-weight: 500;
-  }
 }

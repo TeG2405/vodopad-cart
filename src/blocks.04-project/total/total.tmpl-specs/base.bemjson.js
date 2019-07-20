@@ -3,14 +3,8 @@ module.exports = [
       {elem: 'row', content: [
           {elem: 'label', content: '3 товара'},
           {elem: 'value', content: [
-              {elem: 'old', cls: 'mr-3', content: [
-                  '18 880',
-                  {block: 'fi', mods: {icon: 'rub'}},
-                ]},
-              {content: [
-                  '26 542',
-                  {block: 'fi', mods: {icon: 'rub'}},
-                ]},
+              {block: 'price', mods: {old: true}, content: '18 880'},
+              {block: 'price', content: '26 542'},
             ]},
         ]},
       {elem: 'row', content: [
@@ -23,15 +17,13 @@ module.exports = [
               {content: 'Подъем'},
             ]},
           {elem: 'value', content: [
-              '350',
-              {block: 'fi', mods: {icon: 'rub'}},
+              {block: 'price', content: '350'},
             ]},
         ]},
       {elem: 'row', cls: 'text-success', content: [
           {elem: 'label', content: 'Скидка по промокоду'},
           {elem: 'value', content: [
-              '- 350',
-              {block: 'fi', mods: {icon: 'rub'}},
+              {block: 'price', content: '- 350'},
             ]},
         ]},
       {cls: 'my-3', content: [
@@ -45,14 +37,8 @@ module.exports = [
       {elem: 'row', content: [
           {elem: 'label', content: 'К оплате '},
           {elem: 'value', content: [
-              {elem: 'old', cls: 'mr-3', content: [
-                  '14 390',
-                  {block: 'fi', mods: {icon: 'rub'}},
-                ]},
-              {elem: 'large', content: [
-                  '26 750',
-                  {block: 'fi', mods: {icon: 'rub'}},
-                ]},
+              {block: 'price', mods: {old: true}, content: '14 390'},
+              {block: 'price', mods: {large: true}, content: '26 750'},
             ]},
         ]},
     ]},
