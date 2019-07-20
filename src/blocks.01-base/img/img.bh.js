@@ -5,7 +5,7 @@ module.exports = function(bh) {
             height: json.height,
             src: ctx.process(json.src || {block: '1px'}),
             title: json.title,
-            alt: ctx.content(),
+            alt: ctx.content() || true,
         });
     });
 };

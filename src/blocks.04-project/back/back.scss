@@ -1,0 +1,12 @@
+.back {
+  color: $primary;
+  display: flex;
+  align-items: baseline;
+  .fi{
+    margin-left: 0.1em;
+    font-size: 0.7em;
+  }
+  a{
+    text-decoration: underline;
+  }
+}
