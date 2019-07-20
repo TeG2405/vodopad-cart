@@ -32,7 +32,7 @@ module.exports = [
                 {block: 'price', mods: {old: true}, cls: 'text-success', content: '5 880'},
               ]},
             {elem: 'count', content: [
-                '1',
+                {block: 'count'},
               ]},
             {elem: 'total', content: [
                 {block: 'price', cls: 'text-primary', content: '5 970'},
