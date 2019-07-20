@@ -6,6 +6,21 @@ $green: #B7C63A;
 
 $custom-control-indicator-bg-size: 70%;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1290px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1230px
+) !default;
+
 @import "../blocks.01-base/fi/variables";
 @import "~bootstrap/scss/variables";
 // Теперь переопределенные переменные не должны содержать ключевое слово !default;
