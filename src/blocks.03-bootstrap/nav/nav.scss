@@ -1,1 +1,12 @@
 @import "~bootstrap/scss/nav";
+.nav-pills{
+  .nav-link{
+    border: 1px solid $primary;
+    &:not(:last-child){
+      border-radius: $nav-pills-border-radius 0 0 $nav-pills-border-radius;
+    }
+    &:not(:first-child){
+      border-radius: 0 $nav-pills-border-radius $nav-pills-border-radius 0;
+    }
+  }
+}
