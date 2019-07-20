@@ -66,13 +66,14 @@ module.exports = [
                                   {cls: 'form-group row', content: [
                                       {cls: 'col-sm-2 col-form-label', content: 'Магазин'},
                                       {cls: 'col-sm-10', content: [
-                                          {block: 'form-control', tag: 'select', content: [
+                                          {block: 'custom-select', tag: 'select', content: [
                                             'Адрес магазина 1',
                                             'Адрес магазина 2',
                                             'Адрес магазина 3',
                                             ]},
                                         ]},
                                     ]},
+                                  {block: 'img', cls: 'img-fluid', src: 'http://placehold.it/380x200?text=yMap?'},
                                 ]},
                             ]},
                           {tag: 'hr', cls: 'my-4'},

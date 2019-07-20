@@ -12,6 +12,7 @@
     text-align: center;
     @include media-breakpoint-up(lg){
       text-align: left;
+      margin-bottom: $grid-gutter-width;
     }
   }
   &__inner{
