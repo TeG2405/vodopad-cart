@@ -1,0 +1,81 @@
+.basket {
+  &__item{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #E5E5E5;
+  }
+  &__tools{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #767676;
+  }
+  &__check{
+    flex: 0 0 30px;
+  }
+  &__controls{
+    flex: 1 1 150px;
+  }
+  &__image{
+    flex: 0 0 80px;
+  }
+  &__title{
+    flex: 1 1 auto;
+    color: #2C2B2B;
+  }
+  &__code{
+    color: #767676;
+  }
+  &__availability{
+    flex: 1 1 auto;
+  }
+  &__price{
+    flex: 1 1 auto;
+  }
+  &__count{
+    flex: 1 1 auto;
+  }
+  &__total{
+    flex: 1 1 auto;
+    .price:first-child{
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 500;
+    }
+  }
+  &__remove{
+    flex: 0 0 30px;
+    a{
+      color: #B6B6B6;
+      @include hover-focus-active(){
+        text-decoration: none;
+      }
+    }
+  }
+  &__link{
+    color: #767676;
+    font-size: 18px;
+    cursor: pointer;
+    &:not(:first-child){
+      margin-left: $grid-gutter-width/2;
+    }
+  }
+  &__stock{
+    &:before{
+      content: '';
+      display: inline-block;
+      background-color: $green;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      vertical-align: -0.15em;
+      margin-right: 0.5em;
+      background-image: $custom-checkbox-indicator-icon-checked;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 70%;
+    }
+  }
+}

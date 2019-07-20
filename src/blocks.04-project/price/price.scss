@@ -14,7 +14,4 @@
     color: $primary;
     font-weight: 500;
   }
-  & + & {
-    margin-left: $grid-gutter-width/2;
-  }
 }

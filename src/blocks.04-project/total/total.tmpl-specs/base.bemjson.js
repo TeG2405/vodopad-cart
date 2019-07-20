@@ -3,7 +3,7 @@ module.exports = [
       {elem: 'row', content: [
           {elem: 'label', content: '3 товара'},
           {elem: 'value', content: [
-              {block: 'price', mods: {old: true}, content: '18 880'},
+              {block: 'price', mods: {old: true}, cls: 'mr-2', content: '18 880'},
               {block: 'price', content: '26 542'},
             ]},
         ]},
@@ -37,7 +37,7 @@ module.exports = [
       {elem: 'row', content: [
           {elem: 'label', content: 'К оплате '},
           {elem: 'value', content: [
-              {block: 'price', mods: {old: true}, content: '14 390'},
+              {block: 'price', mods: {old: true}, cls: 'mr-2', content: '14 390'},
               {block: 'price', mods: {large: true}, content: '26 750'},
             ]},
         ]},
