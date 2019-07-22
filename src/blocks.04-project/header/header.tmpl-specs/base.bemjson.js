@@ -5,7 +5,7 @@ module.exports = [
               {elem: 'logo', content: [
                   {block: 'a', content: [
                       {block: 'image', mods: {size: '210x45'}, cls: 'text-center', content: [
-                          {block: 'img', mods: {lazy: true}, src: '/images/logo.svg'},
+                          {block: 'img', mods: {lazy: true}, src: 'images/logo.svg'},
                         ]},
                     ]},
                 ]},
